@@ -19,6 +19,8 @@ none
 
 See [variables](/defaults/main.yml) for more details.
 
+With default variables, this role dont change anything on the system. You need to set the config variables like in the exemple in order to start configuration.
+
 ## Examples
 
         ---
@@ -30,10 +32,9 @@ See [variables](/defaults/main.yml) for more details.
             - role: ansible-system_journald
           vars:
             journald_config:
-              Storage: volatile
-              RuntimeMaxUse: 1G
-              ForwardToConsole: "yes"
-              TTYPath: /dev/tty12
+              ForwardToSyslog: "yes"
+              Compress: "yes"
+              Storage: "persistent"
             journald_wipe_persistent: true
 
 
