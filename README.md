@@ -3,8 +3,8 @@
 [![Galaxy Role](https://img.shields.io/badge/galaxy-system_journald-purple?style=flat)](https://galaxy.ansible.com/lotusnoir/system_journald)
 [![Version](https://img.shields.io/github/release/lotusnoir/ansible-system_journald.svg)](https://github.com/lotusnoir/ansible-system_journald/releases/latest)
 [![GitHub repo size](https://img.shields.io/github/repo-size/lotusnoir/ansible-system_journald?color=orange&style=flat)](https://galaxy.ansible.com/lotusnoir/system_journald)
-[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/lotusnoir/system_journald)
-[![Ansible Quality Score](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/lotusnoir/system_journald)
+[![downloads](https://img.shields.io/ansible/role/d/61812)](https://galaxy.ansible.com/lotusnoir/system_journald)
+[![Ansible Quality Score](https://img.shields.io/ansible/quality/61812)](https://galaxy.ansible.com/lotusnoir/system_journald)
 [![License](https://img.shields.io/badge/license-Apache--2.0-brightgreen?style=flat)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
