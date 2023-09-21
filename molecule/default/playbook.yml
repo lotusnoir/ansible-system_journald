@@ -4,12 +4,12 @@
   become: true
   any_errors_fatal: true
 
-  tasks:
-    - name: Include role
-      ansible.builtin.include_role:
-        name: ansible-system_journald
-
   vars:
     journald_config:
       ForwardToSyslog: "yes"
     journald_wipe_persistent: true
+
+  tasks:
+    - name: Include role
+      ansible.builtin.include_role:
+        name: ansible-system_journald
