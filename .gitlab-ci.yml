@@ -37,6 +37,11 @@ molecule_oraclelinux9:
   image: lotusnoir/molecule_play
   script:
     - MOLECULE_DISTRIB=oraclelinux9 molecule test
+molecule_redhat8:
+  stage: molecule
+  image: lotusnoir/molecule_play
+  script:
+    - MOLECULE_DISTRIB=redhat8 molecule test
 molecule_rocky8:
   stage: molecule
   image: lotusnoir/molecule_play
@@ -74,6 +79,7 @@ changelog:
     - molecule_debian10
     - molecule_oraclelinux8
     - molecule_oraclelinux9
+    - molecule_redhat8
     - molecule_rocky8
     - molecule_ubuntu18
     - molecule_ubuntu22
