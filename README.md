@@ -22,6 +22,7 @@
 ## Description
 
 Configures systemd-journald
+
 ## Requirements
 
 none
@@ -48,7 +49,6 @@ With default variables, this role dont change anything on the system. You need t
               Compress: "yes"
               Storage: "persistent"
             journald_wipe_persistent: true
-
 
 
 ## License
