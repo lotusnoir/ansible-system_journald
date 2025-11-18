@@ -17,6 +17,7 @@ variables:
   rules:
     # Exécuter uniquement si un fichier pertinent change
     - changes:
+        - ".gitlab-ci.yml"
         - "defaults/**"
         - "files/**"
         - "handlers/**"
@@ -60,7 +61,7 @@ molecule_oraclelinux10:
     - MOLECULE_DISTRIB=oraclelinux10 molecule test
 molecule_oraclelinux8:
   <<: *molecule_job_template
-  image: lotusnoir/molecule_play:2.18.11
+  image: lotusnoir/molecule_play:2.15.13
   script:
     - MOLECULE_DISTRIB=oraclelinux8 molecule test
 molecule_oraclelinux9:
@@ -87,7 +88,7 @@ molecule_rocky10:
     - MOLECULE_DISTRIB=rocky10 molecule test
 molecule_rocky8:
   <<: *molecule_job_template
-  image: lotusnoir/molecule_play:2.18.11
+  image: lotusnoir/molecule_play:2.15.13
   script:
     - MOLECULE_DISTRIB=rocky8 molecule test
 molecule_rocky9:
